@@ -98,10 +98,10 @@
         <!-- Main Apology Screen -->
         <div id="apologyScreen">
             <div class="sad-emoji" id="emoji">🥺</div>
-            <h1 id="heading">I'm sorry Tuba...</h1>
-            <p id="message">I really messed up and I feel terrible about it</p>
+            <h1 id="heading">Aree Tuba...</h1>
+            <p id="message">It is really my website</p>
             <div class="btn-group">
-                <button id="yesBtn" onclick="acceptApology()">Yes</button>
+                <button id="yesBtn" onclick="acceptit()">Yes</button>
                 <button id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No</button>
             </div>
         </div>
@@ -134,7 +134,7 @@
         function moveButton() {
             // Pick a message based on how many times they tried to click 'No'
             if (clickCount < excuses.length) {
-                heading.innerText = "Please? 🥺";
+                heading.innerText = "Haha? 🥺";
                 message.innerText = excuses[clickCount];
                 emoji.innerText = "😭";
             }
